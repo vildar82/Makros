@@ -1,0 +1,1026 @@
+<?xml version="1.0"?>
+<!--
+Внимание! Не изменяйте содержимое этого файла.
+При попытке редактирования этого файла с помощью редактора XML возможна потеря адаптации и функций миграции.
+Если требуется изменить информацию в файле адаптации, используйте диалоговое окно "Настройка интерфейса пользователя" в продукте.
+Чтобы открыть диалоговое окно "Настройка интерфейса пользователя", щелкните меню "Сервис" > "Адаптация" > "Интерфейс" или введите НПИ в командной строке. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="4" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="МАКРОСЫ">
+    <MacroGroup Name="NEWGROUP">
+      <MenuMacro UID="MMU_0001">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0002">СпецРост</Name>
+          <Command>^C^C_-vbarun SpecRost.dvb!Rostverk.Rostverk</Command>
+          <HelpString xlate="true" UID="XLS_0010">Расчет спецификаций ростверка</HelpString>
+          <SmallImage Name="VIEW_o.BMP" />
+          <LargeImage Name="VIEW_o.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0003">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0006">Замена блоков</Name>
+          <Command>^C^C_-vbarun ZB.dvb!Main.Main
+</Command>
+          <HelpString xlate="true" UID="XLS_0011">Должны быть прописаны пути к файлам библиотеки в настройках (например в профиле Пан-Кузмичев или Пан-Кронверк)</HelpString>
+          <SmallImage Name="ЗБ.BMP" />
+          <LargeImage Name="ЗБ.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0013">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00012682">Спецификация блоков</Name>
+          <Command>^C^C_-vbarun SpecKonstr.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00012683">Построение спецификации блоков с атрибутами</HelpString>
+          <SmallImage Name="VIEW.BMP" />
+          <LargeImage Name="VIEW.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0015">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6701">Католог шифров</Name>
+          <Command>^C^C_-vbarun SPD_SHIFR.dvb!Main.Shifrs</Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0019">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6698">Вставка блока штампа</Name>
+          <Command>^C^C_-vbarun SPD_SHIFR.dvb!Main.InsStamp</Command>
+          <HelpString xlate="true" UID="XLS_6699">Вставка блока штампа</HelpString>
+          <SmallImage Name="Штамп.bmp" />
+          <LargeImage Name="Штамп.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0021">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00014596">Cпецификация по шифрам</Name>
+          <Command>^C^C_-vbarun SpecShifr.dvb!Main.Main</Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0016">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00014663">Открывает папку текущего чертежа</Name>
+          <Command>^C^C(startapp "explorer.exe" (strcat "/n,/e," (getvar "dwgprefix")))(princ)</Command>
+          <HelpString xlate="true" UID="XLS_00015910">Открывает папку текущего чертежа</HelpString>
+          <SmallImage Name="Проводник.bmp" />
+          <LargeImage Name="Проводник.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Purge">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2333">Очистить...</Name>
+          <Command>^C^C_-vbarun AllOther.dvb!Main.PurgeAll</Command>
+          <HelpString xlate="true" UID="ACAD_1596">Очистка чертежа от неиспользуемых объектов (например, от описаний блоков и слоев):  ОЧИСТИТЬ</HelpString>
+          <SmallImage Name="RCDATA_16_PURGE" />
+          <LargeImage Name="RCDATA_16_PURGE" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0023">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00014707">Каталог Узлов</Name>
+          <Command>^C^C_-vbarun BaseNodes.dvb!Main.BaseNodes</Command>
+          <HelpString xlate="true" UID="XLS_00014666">Просмотр и редактирование каталога узлов</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0017">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015064">Вставка блоков узлов</Name>
+          <Command>^C^C_-vbarun BaseNodes.dvb!Main.InsertNode</Command>
+          <HelpString xlate="true" UID="XLS_00015065">Вставка блоков узлов</HelpString>
+          <SmallImage Name="Узел.BMP" />
+          <LargeImage Name="Узел.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0024">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015066">ЦентрТяжести</Name>
+          <Command>^C^C_-vbarun CentrMass.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00015070">Точка центра тяжести 3D-тела</HelpString>
+          <SmallImage Name="ЦентрТяжести.BMP" />
+          <LargeImage Name="ЦентрТяжести.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0026">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015688">Выбор узловых выносок по образцу выбранной</Name>
+          <Command>^C^C_-vbarun SelSpdsNode.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00015689">Выбор узловых выносок по образцу выбранной</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0028">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015908">Список блоков узлов</Name>
+          <Command>^C^C_-vbarun SelSpdsNode.dvb!Main.NameAndObozn</Command>
+          <HelpString xlate="true" UID="XLS_00015909">Список блоков узлов в выделенной области</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0030">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00016626">Вставка блока каркаса</Name>
+          <Command>^C^C_-vbarun MakeKarkas.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00016627">Вставка блока каркаса, существующего или нового</HelpString>
+          <SmallImage Name="Каркас.BMP" />
+          <LargeImage Name="Каркас.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0032">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00016888">Такой же</Name>
+          <Command>^C^C(arxload "KSVAuto.arx") auto</Command>
+          <HelpString xlate="true" UID="XLS_00016889">Рисование подобного объекта</HelpString>
+          <SmallImage Name="Такойже.BMP" />
+          <LargeImage Name="Такойже.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0034">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00017003">Вставка доп.стержня</Name>
+          <Command>^C^C_-vbarun MakeDopSter.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00017004">Вставка блока доп.стержня</HelpString>
+          <SmallImage Name="Допстержень.BMP" />
+          <LargeImage Name="Допстержень.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0020">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00017248">Удаление асоциативности у размеров</Name>
+          <Command>^C^C_Dimdisassociate;_All;;(Setvar "dimassoc" 1)</Command>
+          <HelpString xlate="true" UID="XLS_00017249">Удаление ассоциативности у всех размеров на чертеже</HelpString>
+          <SmallImage Name="УдалАссоцРазм.BMP" />
+          <LargeImage Name="УдалАссоцРазм.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0036">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00017348">Вставка блока сетки</Name>
+          <Command>^C^C_-vbarun MakeSetka.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00017349">Вставка блока сетки</HelpString>
+          <SmallImage Name="SetkaS1.BMP" />
+          <LargeImage Name="SetkaS1.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0038">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6877">SpecRost2</Name>
+          <Command>^C^C_-vbarun SpecRost2.dvb!Main.Main</Command>
+          <SmallImage Name="VIEW.bmp" />
+          <LargeImage Name="VIEW.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0040">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6877">SpecRost2</Name>
+          <Command>^C^C</Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0022">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00017975">Поворот атрибутов</Name>
+          <Command>^C^C_-vbarun Atr_rotation.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00017976">Поворот атрибутов марки блоков</HelpString>
+          <SmallImage Name="Att_rot.BMP" />
+          <LargeImage Name="Att_rot.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0042">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00018504">Список альбомов изделив в МС</Name>
+          <Command>^C^C_-vbarun ListAlbum.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00018505">Сканирование монтажных схем и вывод списка использующихся альбомов жб изделий</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0044">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00018509">Вставка блока каркаса (кирп)</Name>
+          <Command>^C^C_-vbarun MakeKarkas.dvb!Main.MainK</Command>
+          <HelpString xlate="true" UID="XLS_00018510">Вставка блока каркаса, существующего или нового</HelpString>
+          <SmallImage Name="КаркасК.BMP" />
+          <LargeImage Name="КаркасК.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0045">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00018513">Каталог ЖБИ</Name>
+          <Command>^C^C_-vbarun CatalogGBI.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00018514">Просмотр и редактирование каталога ЖБИ, расчет ведомости расхода стали ЖБИ.</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0046">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00018516">ЛистА4</Name>
+          <Command>^C^C_-vbarun CatalogGBI.dvb!Main.InsertListA4</Command>
+          <HelpString xlate="true" UID="XLS_00018517">Вставка блока листа А4</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0047">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00018519">ЛистА3</Name>
+          <Command>^C^C_-vbarun CatalogGBI.dvb!Main.InsertListA3</Command>
+          <HelpString xlate="true" UID="XLS_00018520">Вставка блока листа А3</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0052">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00021072">Сумма длин отрезков</Name>
+          <Command>^C^C_-vbarun AllOther.dvb!Main.SumLine</Command>
+          <SmallImage Name="SumLine.BMP" />
+          <LargeImage Name="SumLine.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0025">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00021520">Поиск атрибутов</Name>
+          <Command>^C^C_-vbarun AllOther.dvb!Main.FindAtr</Command>
+          <HelpString xlate="true" UID="XLS_00021521">примитивов (например на схемах блоков)</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0054">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00023251">Снятие фиксации атрибута свай</Name>
+          <Command>^C^C_-vbarun AllOther.dvb!Main.AttrLockPos</Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0056">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_7316">Список шифров из библиотеки блоков</Name>
+          <Command>^C^C(command "netload" "VilSearchIzdInLib") VilSearchIzdInLib</Command>
+          <HelpString xlate="true" UID="XLS_00025110">Для работы команды должен быть прописан путь к NET библиотеке (AcadNetAssemblies), расположенная на локальном компьютере.</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0057">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00023253">SpecPoz</Name>
+          <Command>^C^C_-vbarun vilMonolitSpecPoz.dvb!Main.Main</Command>
+          <SmallImage Name="Poz.BMP" />
+          <LargeImage Name="Poz.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0058">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00023254">InsertVynoska</Name>
+          <Command>^C^C_-vbarun vilMonolitSpecPoz.dvb!Main.InsertVynoska</Command>
+          <SmallImage Name="PozVynoska.BMP" />
+          <LargeImage Name="PozVynoska.BMP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0005">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00021901">СбросСпискаМасштабов</Name>
+          <Command>^C^C_-scalelistedit;_R;_Y;_E;</Command>
+          <HelpString xlate="true" UID="XLS_00021902">Сброс списка масштабов</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0006">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00025081">Help</Name>
+          <Command>^P^C^C(startapp (strcat "Explorer /e, x:" (chr 92) "Конструкторы" (chr 92) "Настройки" (chr 92) "Макросы" (chr 92) "HELP"))(princ) </Command>
+          <HelpString xlate="true" UID="XLS_00025109">Папка с уроками</HelpString>
+          <SmallImage Name="RCDATA_16_HELP" />
+          <LargeImage Name="RCDATA_16_HELP" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0007">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00025108">Команда2</Name>
+          <Command>^C^C(shell C:\Games)</Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0008">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00048236">Не выделяется текст</Name>
+          <Command>^C^Ctexttofront;;</Command>
+          <HelpString xlate="true" UID="XLS_00048237">texttofront</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0002">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00022106">ArmSpec</Name>
+          <Command>^C^C_-vbarun ArmSpec.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_00048239">Спецификация арм.стержней</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0060">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00022540">SelectArmBlock</Name>
+          <Command>^C^C_-vbarun ArmSpec.dvb!Main.SelectPos</Command>
+          <HelpString xlate="true" UID="XLS_00048241">Выбор блоков арм.элементов</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0062">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_7812">SelectTextWithCondNumber</Name>
+          <Command>^C^C_-vbarun SelectTextWithCondNumber.dvb!Main.Main</Command>
+          <HelpString xlate="true" UID="XLS_7813">Выбор текстов с опр-ыми числами</HelpString>
+          <SmallImage Name="SelectTextWithCondNumber.BMP" />
+          <LargeImage Name="SelectTextWithCondNumber.BMP" />
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot>
+        <ButtonGroup UID="BGU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE AUX1</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE AUX2</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0003">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE AUX3</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE AUX4</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+      </MouseButtonRoot>
+      <DigitizerButtonRoot>
+        <ButtonGroup UID="BGU_0005">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS1</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0006">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS2</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0007">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS3</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0008">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS4</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+      </DigitizerButtonRoot>
+      <PopMenuRoot>
+        <PopMenu hasDiesel="false" UID="PMU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0018">Ростверки</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00017350" xlate="true">SpecRost2</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0038" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00015911" xlate="true">Вставка блока каркаса</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0030" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00018512" xlate="true">Вставка блока каркаса (кирп)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0044" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00017006" xlate="true">Вставка доп.стержня</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0034" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00017250" xlate="true">Вставка блока сетки</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0036" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0003">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0019">Монтажные схемы</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_0022" xlate="true">Замена блоков</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0003" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00012685" xlate="true">Спецификация</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0013" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00012691" xlate="true">Cпецификация по шифрам</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0021" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00017977" xlate="true">Ведомость ссылочных документов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0042" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015068">Разное</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0038">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00048238" xlate="true">ArmSpec</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0002" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0039">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00048240" xlate="true">SelectArmBlock</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0060" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00016890" xlate="true">"Такой же"</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0032" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00015069" xlate="true">ЦентрТяжести 3D-тел</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0024" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00017250" xlate="true">Удаление асоциативности у размеров</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0020" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00017977" xlate="true">Поворот атрибутов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0022" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00018523" xlate="true">Сумма длин отрезков</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0052" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00021074" xlate="true">Поиск атрибутов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0025" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0033">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00021522" xlate="true">Снятие фиксации атрибута свай</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0054" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0034">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00023252" xlate="true">Список шифров из библиотеки блоков</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0056" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0037">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00025111" xlate="true">Не выделяется текст</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0008" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0040">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00048243" xlate="true">SelectTextWithCondNumber</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0062" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0035">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00023255" xlate="true">Сброс списка масштабов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0005" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0005">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015071">Узлы</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00014665" xlate="true">Каталог Узлов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0023" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00015066" xlate="true">Вставка блоков узлов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0017" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00015072" xlate="true">Выбор узловых выносок</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0026" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00015690" xlate="true">Список блоков узлов</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0028" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>POP1</Alias>
+          <Name xlate="true" UID="XLS_0017">Макросы</Name>
+          <PopMenuRef pUID="PMU_0002" UID="PMRU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="PMU_0003" UID="PMRU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="PMU_0005" UID="PMRU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="PMU_0004" UID="PMRU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00012686" xlate="true">Католог шифров</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0015" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00012691" xlate="true">Вставка блока штампа</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0019" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00014665" xlate="true">Проводник</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0016" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0036">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <NameRef UID="XLS_00023255" xlate="true">Help</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0006" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+      </PopMenuRoot>
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="200" yval="200" rows="1" UID="TBU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>Toolbar1</Alias>
+          <Name xlate="true" UID="XLS_0001">Монтажки</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0007">Замена блоков</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0003" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00012684">Спецификация</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0013" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00048242">Вставка блока штампа</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0019" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="200" yval="200" rows="1" UID="TBU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>Панель1</Alias>
+          <Name xlate="true" UID="XLS_0013">Ростверки</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00017350">SpecRost2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0038" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00018506">Вставка блока каркаса</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0030" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00018511">Вставка блока каркаса (кирп)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0044" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00017005">Вставка доп.стержня</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0034" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="200" yval="200" rows="1" UID="TBU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>ШИФРЫ</Alias>
+          <Name xlate="true" UID="XLS_00012689">Разное</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00014597">Проводник</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0016" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00014664">Очистить...</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Purge" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00016629">Такой же</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0032" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00021073">Сумма длин отрезков</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0052" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+            <Name xlate="true" UID="XLS_00048243">SelectTextWithCondNumber</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0062" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 1</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 2</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0003">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 3</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 4</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0033">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0034">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0035">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0036">
+            <ModifiedRev MajorVersion="17" MinorVersion="1" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+      </TabletMenuRoot>
+      <DoubleClickRoot />
+      <ToolPanelRoot />
+      <PanelSetRoot>
+        <PanelSet UID="PSTU_0001" />
+      </PanelSetRoot>
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

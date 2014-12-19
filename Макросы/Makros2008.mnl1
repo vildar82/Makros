@@ -1,0 +1,14 @@
+; Загрузка сборки PluginManager.dll, который загружает все остальные сборки
+
+(defun LoadPluginManager()
+  (setq echo (getvar "cmdecho"))
+  (setvar "cmdecho" 0)
+  (setq fd (getvar "filedia"))
+  (setvar "filedia" 0)
+  ;(command "_netload" "\\\\sgpsrv2/СПД/Конструкторы/Макросы/NET/vilPluginsLoader.dll")
+  (setvar "filedia" fd)
+  (setvar "cmdecho" echo)
+  (princ "\nMakros loaded")
+  )
+
+(LoadPluginManager)
